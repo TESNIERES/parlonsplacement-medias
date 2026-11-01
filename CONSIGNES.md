@@ -22,7 +22,7 @@ Préparer, publier dans ce dépôt et programmer dans Metricool **une** publicat
     - `date` : `AAAA-MM-JJT08:47:00+01:00` (heure d'hiver) ou `+02:00` (heure d'été)
     - `info.publicationDate` : `{"dateTime": "AAAA-MM-JJT08:47:00", "timezone": "Europe/Paris"}`
     - `info.providers` : `[{"network": "instagram"}]`, `info.instagramData` : `{"type": "POST"}`
-    - `info.media` : les URL `https://raw.githubusercontent.com/TESNIERES/parlonsplacement-medias/main/publications/NXXX-slug/slug-01.jpg`… dans l'ordre des pages
+    - `info.media` : les URL figées sur le commit poussé, `https://raw.githubusercontent.com/TESNIERES/parlonsplacement-medias/<SHA complet de git rev-parse HEAD>/publications/NXXX-slug/slug-01.jpg`… dans l'ordre des pages (jamais `main` : le cache de GitHub peut servir une ancienne image). Vérifier avec `curl` que la première URL répond 200.
     - `info.text` : le contenu de `legende.txt` ; `autoPublish` : true ; `draft` : false
 11. **Mettre à jour** `journal.md` (numéro, date de publication, sujet, sources, statut « Programmé », lien Metricool) et `calendrier.md`, puis commit et push.
 12. **Résumé final** en 5 lignes : sujet, jour et heure programmés, sources, lien Metricool, et toute alerte.
