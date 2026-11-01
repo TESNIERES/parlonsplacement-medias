@@ -1,0 +1,140 @@
+/* Parlons Placement - style ÉDITION (v2)
+   Une publication = une page de journal. Pas de pastilles, pas de boutons ronds,
+   pas de barre de progression : un bandeau de titre, des filets, un folio, des notes de sources. */
+
+.ed { width: 1080px; height: 1350px; box-sizing: border-box; position: relative; overflow: hidden;
+  display: flex; flex-direction: column; padding: 56px 80px 52px;
+  background: var(--fond); color: var(--texte); font-family: var(--font-texte);
+  -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+.ed * { box-sizing: border-box; }
+.ed.story { height: 1920px; }
+
+/* Bandeau de titre : logo, numéro, date, filet double */
+.ed-tete { display: flex; align-items: flex-end; justify-content: space-between; padding-bottom: 18px;
+  border-bottom: 3px solid var(--texte); position: relative; }
+.ed-tete::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 1px; background: var(--texte); }
+.ed-tete .logo { height: 46px; display: block; }
+.ed-tete .logo svg { height: 46px; width: auto; display: block; }
+.ed-tete .num { font: 600 21px/1 var(--font-texte); letter-spacing: .12em; text-transform: uppercase; font-variant-numeric: tabular-nums; }
+.ed-tete.mini { border-bottom-width: 2px; padding-bottom: 14px; }
+.ed-tete.mini .logo, .ed-tete.mini .logo svg { height: 36px; }
+
+/* Rubrique : un petit pavé lime, pas de pastille */
+.ed-rubrique { display: flex; align-items: center; gap: 14px; margin: 0;
+  font: 700 22px/1 var(--font-texte); letter-spacing: .16em; text-transform: uppercase; color: var(--accent); }
+.ed-rubrique::before { content: ""; width: 30px; height: 16px; background: var(--lime); box-shadow: inset 0 0 0 2px var(--sapin); flex: none; }
+
+/* Titres serif : sérieux, lisibles */
+.ed-titre { font-family: var(--font-titre); font-weight: 400; font-size: 118px; line-height: .96; letter-spacing: -.012em; margin: 0; }
+.ed-titre.m { font-size: 92px; line-height: .98; }
+.ed-titre.s { font-size: 72px; line-height: 1.02; }
+.ed-titre em, .ed-inter em { font-style: italic; color: var(--accent); }
+.ed-inter { font-family: var(--font-titre); font-weight: 400; font-size: 58px; line-height: 1.06; margin: 0; }
+.ed-chapo { font: 500 38px/1.34 var(--font-texte); letter-spacing: -.005em; margin: 0; max-width: 900px; }
+.ed-texte { font: 400 36px/1.42 var(--font-texte); margin: 0; }
+.ed-texte b, .ed-chapo b { font-weight: 700; }
+.ed-doux { color: var(--texte-doux); }
+.ed-sup { font-size: .55em; vertical-align: super; line-height: 0; font-weight: 600; color: var(--accent); margin-left: 2px; }
+
+/* Corps : grille à marge (colonne étroite à gauche) */
+.ed-corps { flex: 1; display: flex; flex-direction: column; min-height: 0; padding-top: 52px; }
+.ed-corps.bas { justify-content: flex-end; }
+.ed-corps.centre { justify-content: center; }
+.ed-marge { display: grid; grid-template-columns: 170px 1fr; column-gap: 40px; }
+.ed-marge .m { font: 700 22px/1.3 var(--font-texte); letter-spacing: .12em; text-transform: uppercase; color: var(--texte-doux); padding-top: 10px; border-top: 2px solid var(--texte); }
+.ed-marge .t { border-top: 1px solid var(--filet); padding-top: 6px; }
+.ed-g1 { height: 24px; } .ed-g2 { height: 44px; } .ed-g3 { height: 72px; }
+
+/* Pied : notes de sources + folio */
+.ed-pied { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; border-top: 1px solid var(--filet); padding-top: 18px; margin-top: 28px; }
+.ed-notes { font: 400 20px/1.38 var(--font-texte); color: var(--texte-doux); margin: 0; max-width: 780px; }
+.ed-notes b { font-weight: 600; color: var(--texte); }
+.ed-folio { font: 600 22px/1 var(--font-texte); letter-spacing: .08em; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ed-folio i { font-style: normal; color: var(--accent); margin-left: 10px; }
+
+/* Grand chiffre : serif, comme une une de magazine */
+.ed-chiffre { font-family: var(--font-titre); font-weight: 400; font-size: 330px; line-height: .8; letter-spacing: -.035em; margin: 0; font-variant-numeric: lining-nums; }
+.ed-chiffre small { font-size: .4em; letter-spacing: 0; margin-left: .06em; }
+
+/* Le calendrier (graphique maison) */
+.ed-cal { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
+.ed-cal span { height: 92px; display: flex; align-items: flex-start; justify-content: flex-start; padding: 12px 14px;
+  font: 600 28px/1 var(--font-texte); font-variant-numeric: tabular-nums; background: var(--fond-2); }
+.ed-cal span.b { background: var(--sapin); color: var(--papier); }
+.ed-cal span.x { background: transparent; }
+.ed-cal span.k { box-shadow: inset 0 0 0 4px var(--lime); }
+.ed-cal-l { display: flex; gap: 36px; font: 600 24px/1.2 var(--font-texte); }
+.ed-cal-l i { display: inline-block; width: 26px; height: 26px; vertical-align: -5px; margin-right: 12px; }
+
+/* Frise d'un mois coupé en deux quinzaines */
+.ed-frise { display: grid; grid-template-columns: 15fr 16fr; gap: 6px; }
+.ed-frise div { height: 120px; padding: 16px 20px; display: flex; flex-direction: column; justify-content: space-between; font: 600 24px/1.2 var(--font-texte); }
+.ed-frise .q1 { background: var(--fond-2); } .ed-frise .q2 { background: var(--sapin); color: var(--papier); }
+.ed-fleche { display: grid; grid-template-columns: 300px 1fr; column-gap: 32px; row-gap: 0; align-items: baseline; }
+.ed-fleche > div { padding: 26px 0; border-top: 1px solid var(--filet); }
+.ed-fleche .quand { font: 700 30px/1.25 var(--font-texte); }
+.ed-fleche .effet { font-family: var(--font-titre); font-size: 56px; line-height: 1.04; }
+
+/* La coupure : une source citée, posée sur la page */
+.ed-coupure { background: #FFFFFF; color: #0C1A14; padding: 44px 50px 46px; transform: rotate(-1.2deg);
+  box-shadow: 0 2px 0 rgba(12,26,20,.08), 0 24px 50px rgba(12,26,20,.18); border-top: 10px solid var(--sapin); }
+.ed-coupure .src { font: 700 22px/1.2 var(--font-texte); letter-spacing: .14em; text-transform: uppercase; color: #1F7A4D; }
+.ed-coupure .date { font: 500 22px/1.2 var(--font-texte); color: #56655C; margin-top: 8px; }
+.ed-coupure .titre { font-family: var(--font-titre); font-size: 70px; line-height: 1.02; margin: 26px 0 0; }
+.ed-coupure .url { font: 500 20px/1.2 var(--font-texte); color: #56655C; margin-top: 26px; word-break: break-all; }
+
+/* Photo de presse : cadre, légende, crédit obligatoire */
+.ed-photo { position: relative; overflow: hidden; background: var(--fond-2); }
+.ed-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ed-legende { font: 400 20px/1.35 var(--font-texte); color: var(--texte-doux); margin-top: 12px; }
+.ed-legende b { font-weight: 600; color: var(--texte); }
+.ed-vide { display: flex; align-items: center; justify-content: center; text-align: center; font: 600 22px/1.4 var(--font-texte); letter-spacing: .12em; text-transform: uppercase; color: var(--texte-doux); border: 2px dashed var(--filet); }
+
+/* Liste « à retenir » : chiffres serif, filets */
+.ed-liste { list-style: none; margin: 0; padding: 0; counter-reset: ed; }
+.ed-liste li { counter-increment: ed; display: grid; grid-template-columns: 96px 1fr; column-gap: 28px; padding: 26px 0; border-top: 1px solid var(--filet); }
+.ed-liste li:last-child { border-bottom: 1px solid var(--filet); }
+.ed-liste li::before { content: counter(ed); font-family: var(--font-titre); font-size: 96px; line-height: .8; color: var(--accent); }
+.ed-liste b { display: block; font: 700 36px/1.2 var(--font-texte); margin-bottom: 6px; }
+.ed-liste span { font: 400 32px/1.38 var(--font-texte); color: var(--texte-doux); }
+
+/* Colophon (dernière page) */
+.ed-colo { display: grid; grid-template-columns: 1fr 1fr; column-gap: 48px; }
+.ed-colo h4 { font: 700 22px/1 var(--font-texte); letter-spacing: .14em; text-transform: uppercase; margin: 0 0 16px; padding-top: 14px; border-top: 2px solid var(--texte); }
+.ed-colo p { font: 400 24px/1.42 var(--font-texte); margin: 0 0 10px; color: var(--texte-doux); }
+.ed-colo p b { color: var(--texte); font-weight: 600; }
+
+/* Bandeau Publicité (contenus sponsorisés) : en tête de chaque page */
+.ed-pub { margin: -56px -80px 30px; height: 60px; display: flex; align-items: center; gap: 16px; padding: 0 80px;
+  background: var(--texte); color: var(--fond); font: 700 20px/1 var(--font-texte); letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; overflow: hidden; }
+.ed-pub b { letter-spacing: .16em; }
+
+.ed sup.o { font-size: .5em; vertical-align: .9em; line-height: 0; margin-left: .02em; letter-spacing: 0; }
+.ed-fleche .quand { font: 700 32px/1.25 var(--font-texte); }
+.ed-fleche .effet { font-family: var(--font-titre); font-size: 66px; line-height: 1.02; }
+.ed-fleche > div { padding: 34px 0; }
+.ed-frise.grand div { height: 230px; padding: 24px 26px; }
+.ed-frise.grand b { font-family: var(--font-titre); font-weight: 400; font-size: 96px; line-height: .9; }
+.ed-coupure .titre { font-size: 80px; }
+
+/* Le manifeste : ce qu'on ne dira jamais, barré */
+.ed-barre { font-family: var(--font-titre); font-size: 84px; line-height: 1.12; margin: 0; position: relative; display: inline-block; }
+.ed-barre::after { content: ""; position: absolute; left: -6px; right: -6px; top: 54%; height: 8px; background: var(--corail); transform: rotate(-1.5deg); }
+.ed-barres { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; }
+
+/* Reel 9:16 édition : un bandeau de titre papier en haut, la vidéo dessous */
+.ed-reel { width: 1080px; height: 1920px; position: relative; overflow: hidden; background: var(--encre); font-family: var(--font-texte); }
+.ed-reel .video { position: absolute; left: 0; right: 0; bottom: 0; top: 0; }
+.ed-reel .une { position: absolute; left: 0; right: 0; top: 0; padding: 230px 80px 48px; background: var(--papier); color: var(--encre); }
+.ed-reel .une .ed-titre { font-size: 104px; }
+.ed-st { position: absolute; left: 100px; right: 100px; top: 1180px; text-align: center; }
+.ed-st p { display: inline; font: 700 54px/1.5 var(--font-texte); color: var(--papier); background: rgba(12,26,20,.82); padding: 6px 16px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.ed-st p u { text-decoration: none; color: var(--lime); }
+
+
+/* ---------- Couverture à la une (9:16, recadrée en cercle par Instagram) ---------- */
+.pp-une { width: 1080px; height: 1920px; display: grid; place-items: center; background: var(--fond); }
+.pp-une svg { width: 520px; height: 520px; }
+.pp-une svg .t { stroke: var(--accent); stroke-width: 44; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.pp-une svg .f { fill: var(--accent); }
+
