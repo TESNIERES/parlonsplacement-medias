@@ -24,8 +24,9 @@ Préparer, publier dans ce dépôt et programmer dans Metricool **une** publicat
     - `info.providers` : `[{"network": "instagram"}]`, `info.instagramData` : `{"type": "POST"}`
     - `info.media` : les URL figées sur le commit poussé, `https://raw.githubusercontent.com/TESNIERES/parlonsplacement-medias/<SHA complet de git rev-parse HEAD>/publications/NXXX-slug/slug-01.jpg`… dans l'ordre des pages (jamais `main` : le cache de GitHub peut servir une ancienne image). Vérifier avec `curl` que la première URL répond 200.
     - `info.text` : le contenu de `legende.txt` ; `autoPublish` : true ; `draft` : false
-11. **Mettre à jour** `journal.md` (numéro, date de publication, sujet, sources, statut « Programmé », lien Metricool) et `calendrier.md`, puis commit et push.
-12. **Résumé final** en 5 lignes : sujet, jour et heure programmés, sources, lien Metricool, et toute alerte.
+11. **La story du jour.** `python3 moteur/story.py /tmp/NXXX/slug-01.png "<rubrique>" "<titre court, un passage en <em>>" /tmp/NXXX/story.png`, convertir en `publications/NXXX-slug/story-01.jpg` (JPEG qualité 92), relire, pousser, puis `createScheduledPost` avec `info.instagramData` : `{"type": "STORY"}`, **sans champ text**, le même jour à **08:52** (5 minutes après le post), média = URL figée sur le commit. Une story par post, pas plus.
+12. **Mettre à jour** `journal.md` (numéro, date de publication, sujet, sources, statut « Programmé », lien Metricool) et `calendrier.md`, puis commit et push.
+13. **Résumé final** en 5 lignes : sujet, jour et heure programmés, sources, lien Metricool, et toute alerte.
 
 **En cas de blocage** (push refusé, erreur Metricool, source introuvable, rendu raté) : ne rien programmer, expliquer précisément le blocage dans le résumé.
 
