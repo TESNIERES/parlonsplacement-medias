@@ -29,6 +29,14 @@ Préparer, publier dans ce dépôt et programmer dans Metricool **une** publicat
 
 **En cas de blocage** (push refusé, erreur Metricool, source introuvable, rendu raté) : ne rien programmer, expliquer précisément le blocage dans le résumé.
 
+## Photos réelles
+
+Deux publications par semaine au moins portent une vraie photo, en page 2 du carrousel :
+
+- `search_photos` sur Unsplash (requête courte et concrète : « keys on table », « grocery receipt »), choisir une photo de lieu, d'objet ou de scène. **Jamais une personne présentée comme témoin.**
+- `download_asset` sur la photo retenue (obligatoire pour Unsplash), puis utiliser comme média l'URL `urls.raw` suivie de `&w=1080&h=1350&fit=crop&fm=jpg&q=85` pour obtenir exactement le format 4:5 du carrousel.
+- Crédit dans la légende et dans le colophon : « Photo : Prénom Nom / Unsplash ».
+
 ## Ligne éditoriale
 
 - Des sujets **concrets et universels** : livrets, loyer, crédit, impôts, retraite, frais bancaires, inflation, assurance-vie, bourse, immobilier, arnaques. Toujours l'angle « ce que ça change pour toi ».
