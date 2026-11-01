@@ -2,5 +2,5 @@
 
 | N° | Dossier | Publication prévue | Sujet | Sources (vérifiées le) | Statut | Metricool |
 | --- | --- | --- | --- | --- | --- | --- |
-| 001 | publications/N001-manifeste | à programmer | On va parler d'argent. Simplement. | - | Prêt | - |
-| 002 | publications/N002-livret-a-quinzaines | à programmer | Livret A : le jour où tu verses compte | service-public.gouv.fr F2365 (1er août 2026), info.gouv.fr (31 juillet 2026) | Prêt | - |
+| 001 | publications/N001-manifeste | lundi 2 novembre 2026, 08:47 | On va parler d'argent. Simplement. | - | Programmé | https://app.metricool.com/planner/calendar?blogId=7804054&openWithPostUuid=-6009005214294062750 |
+| 002 | publications/N002-livret-a-quinzaines | mardi 3 novembre 2026, 08:47 | Livret A : le jour où tu verses compte | service-public.gouv.fr F2365 (1er août 2026), info.gouv.fr (31 juillet 2026) | Programmé | https://app.metricool.com/planner/calendar?blogId=7804054&openWithPostUuid=8846740787801311396 |
