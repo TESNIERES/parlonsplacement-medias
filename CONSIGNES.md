@@ -48,9 +48,9 @@ Deux publications par semaine au moins portent une vraie photo, en page 2 du car
 
 ## Style Édition (ne pas dévier)
 
-- Une publication = une page de journal : bandeau de titre (logo, N°, mois, filet double), rubrique avec pavé lime, titres en Instrument Serif, texte en Inter, notes de sources numérotées, folio « 3 / 8 → ».
+- Une publication = une page de journal : bandeau avec le logo et le filet double (**jamais de numéro de post ni de date dans le bandeau**, ça fait artificiel), rubrique avec pavé lime, titres en Instrument Serif, texte en Inter, notes de sources numérotées, folio « 3 / 8 → ».
 - 80 % papier, 15 % sapin, 5 % lime. Une page sapin maximum, deux dans les longs formats.
-- **Interdits** : pastilles arrondies, boutons ronds, flèches dessinées, barres de progression, cartes à icônes, emoji, dégradés, surligneur fluo, images générées par IA, mise en page identique sur toutes les pages.
+- **Interdits** : numéro de post ou date dans l'en-tête, pastilles arrondies, boutons ronds, flèches dessinées, barres de progression, cartes à icônes, emoji, dégradés, surligneur fluo, images générées par IA, mise en page identique sur toutes les pages.
 
 ## Légende type
 

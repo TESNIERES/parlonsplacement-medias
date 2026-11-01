@@ -6,9 +6,9 @@ LOGO = {"sapin": open(os.path.join(ICI, "logos/pp-logo-horizontal-transparent-sa
 N = " "; S = " "
 def logo_for(theme): return LOGO["papier"] if theme in ("sapin", "encre") else LOGO["sapin"]
 
-def tete(theme, numero, date, mini=False):
-    return (f'<header class="ed-tete{" mini" if mini else ""}"><div class="logo">{logo_for(theme)}</div>'
-            f'<div class="num">N°{numero}{S}·{S}{date}</div></header>')
+def tete(theme, numero=None, date=None, mini=False):
+    # Bandeau : le logo et le filet double, rien d'autre (jamais de numéro ni de date).
+    return f'<header class="ed-tete{" mini" if mini else ""}"><div class="logo">{logo_for(theme)}</div></header>'
 
 def pied(notes, folio, total, suite=True):
     f = f'{folio}{S}/{S}{total}' + ('<i>→</i>' if suite and folio != total else '')
