@@ -6,7 +6,7 @@ Prendre le premier sujet « À faire » dans l'ordre. Chaque fait est revérifi�
 | --- | --- | --- | --- | --- | --- |
 | 001 | Le manifeste | On va parler d'argent. Simplement. | Présentation du média | - | Produit |
 | 002 | Les bases | Livret A : le jour où tu verses compte | Règle des quinzaines | service-public.gouv.fr (F2365), info.gouv.fr | Produit |
-| 003 | Face à face | Livret A, LDDS, LEP : qui peut ouvrir quoi | Conditions, plafonds, taux, fiscalité | service-public.gouv.fr | À faire |
+| 003 | Face à face | Livret A, LDDS, LEP : qui peut ouvrir quoi | Conditions, plafonds, taux, fiscalité | service-public.gouv.fr | Produit |
 | 004 | Le chiffre | Ce que l'inflation a fait à 1 000 € depuis 10 ans | Pouvoir d'achat de l'épargne | insee.fr (convertisseur franc-euro et indice des prix) | À faire |
 | 005 | Les bases | Crédit immobilier : ce que contient le TAEG | Intérêts, assurance, frais de dossier, garantie | service-public.gouv.fr, banque-france.fr | À faire |
 | 006 | La source | Les arnaques à l'investissement : les signaux d'alerte | Listes noires, promesses irréalistes | amf-france.org | À faire |
