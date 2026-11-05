@@ -9,7 +9,7 @@ Prendre le premier sujet « À faire » dans l'ordre. Chaque fait est revérifi�
 | 003 | Face à face | Livret A, LDDS, LEP : qui peut ouvrir quoi | Conditions, plafonds, taux, fiscalité | service-public.gouv.fr | Produit |
 | 004 | Le chiffre | Ce que l'inflation a fait à 1 000 € depuis 10 ans | Pouvoir d'achat de l'épargne | insee.fr (convertisseur franc-euro et indice des prix) | Produit |
 | 005 | Les bases | Crédit immobilier : ce que contient le TAEG | Intérêts, assurance, frais de dossier, garantie | service-public.gouv.fr, banque-france.fr | Produit |
-| 006 | La source | Les arnaques à l'investissement : les signaux d'alerte | Listes noires, promesses irréalistes | amf-france.org | À faire |
+| 006 | La source | Les arnaques à l'investissement : les signaux d'alerte | Listes noires, promesses irréalistes | amf-france.org | Produit |
 | 007 | Les bases | Le PEA en 5 points | Plafond, durée, fiscalité, retraits | service-public.gouv.fr, impots.gouv.fr | À faire |
 | 008 | Côté CGP | Démembrement de propriété : l'essentiel | Usufruit, nue-propriété, barème fiscal | legifrance.gouv.fr (article 669 CGI) | À faire |
 | 009 | Les bases | Assurance-vie : ce qui change après 8 ans | Abattement annuel sur les gains | service-public.gouv.fr, impots.gouv.fr | À faire |
