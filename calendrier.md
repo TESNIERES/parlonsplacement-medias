@@ -11,7 +11,7 @@ Prendre le premier sujet « À faire » dans l'ordre. Chaque fait est revérifi�
 | 005 | Les bases | Crédit immobilier : ce que contient le TAEG | Intérêts, assurance, frais de dossier, garantie | service-public.gouv.fr, banque-france.fr | Produit |
 | 006 | La source | Les arnaques à l'investissement : les signaux d'alerte | Listes noires, promesses irréalistes | amf-france.org | Produit |
 | 007 | Les bases | Le PEA en 5 points | Plafond, durée, fiscalité, retraits | service-public.gouv.fr, impots.gouv.fr | Produit |
-| 008 | Le chiffre | Les tranches de l'impôt sur le revenu | Pourquoi une augmentation ne fait pas perdre d'argent | impots.gouv.fr, service-public.gouv.fr | À faire |
+| 008 | Le chiffre | Les tranches de l'impôt sur le revenu | Pourquoi une augmentation ne fait pas perdre d'argent | impots.gouv.fr, service-public.gouv.fr | Produit |
 | 009 | Les bases | Crédit à la consommation : 14 jours pour changer d'avis | Délai de rétractation | service-public.gouv.fr | À faire |
 | 010 | Les bases | Frais bancaires : ce que la loi plafonne | Commissions d'intervention, incidents | service-public.gouv.fr | À faire |
 | 011 | Les bases | Assurance-vie : ce qui change après 8 ans | Abattement annuel sur les gains | service-public.gouv.fr, impots.gouv.fr | À faire |
